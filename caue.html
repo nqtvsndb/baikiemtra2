@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="minphantuchan"></p>
+<script>
+  let a = [
+    [1,2,3,4,5],
+    [10,9,8,7,6]
+  ];
+  let sochan = "";
+  let min = 0 ;
+  for (let i = 0; i< a.length; i++) {
+    for (let j = 0; j < a[i].length; j++) {
+      if (a[i][j] % 2 === 0) {
+        sochan = sochan + a[i][j] + " ";
+        if (min<a[i][j]) {
+          min=a[i][j] ;
+        }
+      }
+    }
+  }
+  document.getElementById('minphantuchanchan').innerHTML = "Min phần tử chắn là : "+ min;
+</script>
+</body>
+</html>

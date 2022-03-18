@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="tinhmax"></p>
+<script>
+    let a = [
+        [1,2,3,4,5],
+        [10,9,8,7,6]
+    ];
+    let max = 1;
+    for (let i = 0; i< a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (max<a[i][j]) {
+                max=a[i][j];
+            }
+        }
+    }
+    document.getElementById('tinhmax').innerHTML = "Max mảng là : "+ max;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="tinhmin"></p>
+<script>
+    let a = [
+        [1,2,3,4,5],
+        [10,9,8,7,6]
+    ];
+    let min = 1;
+    for (let i = 0; i< a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (min<a[i][j]) {
+                min=a[i][j];
+            }
+        }
+    }
+    document.getElementById('tinhmin').innerHTML = "Min mảng là : "+ min;
+</script>
+</body>
+</html>
